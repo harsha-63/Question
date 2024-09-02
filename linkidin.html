@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin</title>
+    <style>
+        .body{
+            height: 800px;
+            
+        }
+        .container{
+            margin-top:10px;
+            margin-left: 210px;
+            width: 500px;
+            background-color:white;
+
+        }
+        .main{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+        .parent{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-end;
+            align-items: flex-start;
+            background-color:white;
+            height:100px;
+            width:100%;
+            margin-right:100px;
+        }
+        .cube{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100px;
+            height:100px;
+        } 
+        .cube:first-of-type + .cube{
+            margin-left:425px;
+        }
+        .SQ{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height:100px;  
+        }
+        img{
+            position: relative;
+            height: 25px;
+            left:13px;
+            width:30px;
+            bottom:26px;
+        } 
+        .image1{
+            position: relative;
+            left:25px;
+        }
+        .image-caption{
+            position: relative;
+            top:5px;
+            right: 15px;
+            margin-top: 5px;
+            font-size: smaller;
+            color: black;
+        }
+
+        .choose{
+            width:70px;
+            height:40px;    
+        }
+        h2{
+            height: 20px;
+            font-weight: lighter;
+            font-size:46px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgba(165, 42, 42, 0.816);
+        }
+        .sign-in-button{
+            width: 312px;
+            height:34px;
+            font-size: 15px;
+            color: white;
+            background-color: blue;
+            border: 1px solid black;
+            border-radius: 16px;
+            cursor: pointer;
+        }
+        button{
+            width:312px;
+            height: 34px;
+            font-size: 15px;
+            color: black;
+            background-color:white;
+            border: 1px solid gray;
+            border-radius: 16px;
+            cursor:pointer ;
+        }
+        #link{
+            position: relative;
+            width:250px;
+            height:150px;
+            bottom:15px;
+            left:-4px;
+        }
+        
+        p{
+            color: blue;
+        }
+        .or{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            width:312px;
+            position:relative;
+
+        }
+        hr{
+            width: 312px;
+            border: 1px solid #ccc;
+
+        }
+        .centered-text{
+            position: absolute;
+            padding: 10px;
+            background-color: #fff;
+
+        }
+        #google{
+            position: relative;
+            width:22px;
+            height: 20px;
+            bottom:-3px;
+            left: 2px;
+        }
+        .picture{
+            margin-top:-500px;
+            margin-left:700px;
+            width:750px;
+            background-color:white;
+            height: 500px;
+        }
+        #pic{
+            position:relative;
+            width: 800px;
+            height: 510px;
+            top: 20px;
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+    <div class="parent">
+        <div class="cube"><img src="images/linked.png" id="link"></div>
+        <div class="cube"><img src="images/discover.png" alt="image discription" class="image1">
+             <div class="image-caption">Discover</div>
+             </div>
+        <div class="cube"><img src="images/people.png" alt="image discription">
+            <div class="image-caption">People</div>
+            </div>
+        <div class="cube"><img src="images/learning.png" alt="image discription" class="image1">
+            <div class="image-caption">Learning</div>
+            </div>
+        <div class="cube"><img src="images/job.png" alt="image discription" >
+             <div class="image-caption">Jobs</div>
+             </div>
+             
+        <div class="SQ">Join Now</div>
+        <div class="SQ">
+            <button class="choose">Sign in</button>
+        </div>
+    </div>
+
+        
+    </div>
+    <div class="container">
+        <h2>Welcome to your</h2>
+        <h2> professional community </h2>
+        <br>
+        <label style="font-size:15px;">Email or Phone </label>
+        <br>
+        <input type="email;number" style="width:300px ;height: 30px;">
+        <br><br>
+        <label style="font-size:15px;">Password</label>
+        <br>
+        <input type="password" style="width:300px; height:30px;">
+        <br><br>
+        <p>Forget password?</p>
+        <br>
+        <button class="sign-in-button" onclick="signIn()">Sign In</button>
+        <br><br>
+        <div class="or">
+            <hr>
+            <span class="centered-text">or</span>
+        </div>
+        <br>
+        <button><img src="images/google.png" id="google"> Sign in with Google</button>
+        <br><br>
+        <button>New to LinkedIn? Join Now</button>
+        
+
+    </div>
+    <div class="picture">
+        <img src="images/linkedin.svg" id="pic">
+    </div>
+    
+</body>
+</html> 
